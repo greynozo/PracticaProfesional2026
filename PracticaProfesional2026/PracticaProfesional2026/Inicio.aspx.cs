@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace PracticaProfesional2026
 {
-    public partial class About : System.Web.UI.Page
+    public partial class Inicio : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

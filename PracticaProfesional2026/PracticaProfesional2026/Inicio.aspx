@@ -1,8 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="PracticaProfesional2026.About" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<div id="content" class="p-4 p-md-5 pt-5">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true"
+    CodeBehind="Inicio.aspx.cs" Inherits="PracticaProfesional2026.Inicio" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div id="content" class="p-4 p-md-5 pt-5">
         <h2 class="mb-4">
-            WebForm About</h2>
+            Sidebar #02</h2>
         <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
             incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud

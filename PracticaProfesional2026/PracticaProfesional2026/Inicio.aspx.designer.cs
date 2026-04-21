@@ -10,6 +10,6 @@
 namespace PracticaProfesional2026 {
     
     
-    public partial class About {
+    public partial class Inicio {
     }
 }
