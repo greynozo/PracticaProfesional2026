@@ -5,20 +5,55 @@
     <div id="content" class="p-4 p-md-5 pt-5">
         <h2 class="mb-4">
             Sidebar #02</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.</p>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-            deserunt mollit anim id est laborum.</p>
-    </div>
+        <table>
+            <tr>
+                <td>
+                    <asp:Label ID="lblNombre" Text="Nombre" runat="server" />
+                </td>
+                <td>
+                    <asp:TextBox ID="txtNombre" runat="server"/>
+                    <asp:RequiredFieldValidator ID="rfvNombre" ControlToValidate="txtNombre" Text="El nombre es obligatorio." runat="server" 
+                    ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="lblApellido" Text="Apellido" runat="server" />
+                </td>
+                <td>
+                    <asp:TextBox ID="txtApellido" runat="server" />
+                    <asp:RequiredFieldValidator ID="rfvApellido" ControlToValidate="txtApellido" Text="El apellido es obligatorio." runat="server" 
+                    ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="lblDNI" Text="DNI" runat="server" />
+                </td>
+                <td>
+                    <asp:TextBox ID="txtDNI" runat="server" TextMode="Number" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="lblUsuario" Text="Usuario" runat="server" />
+                </td>
+                <td>
+                    <asp:TextBox ID="txtUsuario" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Label ID="lblPassword" Text="Password" runat="server" />
+                </td>
+                <td>
+                    <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" />
+                </td>
+            </tr>
+        </table>
+        </br>
+        <asp:Button ID="btnGuardar" CssClass="btn-success" runat="server" 
+            Text="Guardar" onclick="btnGuardar_Click" />
+        <asp:Label ID="lblMensaje" Text="" ForeColor="Red" runat="server" />
     </div>
 </asp:Content>

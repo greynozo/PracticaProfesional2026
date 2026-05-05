@@ -32,7 +32,7 @@
                     <a href="Inicio.aspx">Inicio</a>
                 </li>
                 <li>
-                    <a href="#">Home 2</a>
+                    <a href="Default.aspx">Default (Pruebas)</a>
                 </li>
                 <li>
                     <a href="#">Home 3</a>

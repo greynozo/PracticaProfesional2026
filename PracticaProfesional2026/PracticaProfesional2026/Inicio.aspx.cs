@@ -13,5 +13,16 @@ namespace PracticaProfesional2026
         {
 
         }
+
+        protected void btnGuardar_Click(object sender, EventArgs e)
+        {
+            string Nombre = txtNombre.Text;
+            string Apellido = txtApellido.Text;
+
+            if (Nombre == "" || Apellido == "")
+                lblMensaje.Text = "Debe ingresar Nombre y Apellido";
+            else
+                lblMensaje.Text = "Bienvenido al ISFDyT N° 46: " + Nombre + " " + Apellido;
+        }
     }
 }
