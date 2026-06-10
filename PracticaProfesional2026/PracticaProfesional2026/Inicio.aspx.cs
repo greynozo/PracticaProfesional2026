@@ -13,7 +13,10 @@ namespace PracticaProfesional2026
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string idSession = Session["usuario"].ToString();
 
+            if(String.IsNullOrEmpty(idSession))
+                Response.Redirect("Login.aspx");
         }
 
         protected void btnGuardar_Click(object sender, EventArgs e)
